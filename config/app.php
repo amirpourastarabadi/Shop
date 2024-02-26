@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
 use Module\Cart\Providers\CartServiceProvider;
 use Module\Customer\Providers\CustomerServiceProvider;
+use Module\Order\Providers\OrderServiceProvider;
+use Module\Product\Providers\ProductServiceProvider;
 
 return [
 
@@ -173,6 +175,8 @@ return [
 
         CartServiceProvider::class,
         CustomerServiceProvider::class,
+        OrderServiceProvider::class,
+        ProductServiceProvider::class,
     ])->toArray(),
 
     /*
