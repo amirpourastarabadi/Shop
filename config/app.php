@@ -6,6 +6,7 @@ use Module\Cart\Providers\CartServiceProvider;
 use Module\Customer\Providers\CustomerServiceProvider;
 use Module\Order\Providers\OrderServiceProvider;
 use Module\Product\Providers\ProductServiceProvider;
+use Module\Shipment\Providers\ShipmentServiceProvider;
 
 return [
 
@@ -177,6 +178,7 @@ return [
         CustomerServiceProvider::class,
         OrderServiceProvider::class,
         ProductServiceProvider::class,
+        ShipmentServiceProvider::class,
     ])->toArray(),
 
     /*
